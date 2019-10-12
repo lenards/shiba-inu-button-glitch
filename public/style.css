@@ -1,0 +1,141 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", "Helvetica Neue", helvetica, sans-serif;
+  background-color: rgba(255, 100, 0, 0.14);
+  margin: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+button {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Lexend Deca", "Helvetica Neue", helvetica, sans-serif;
+}
+
+h1 {
+  font-style: 24px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  color: #ff6400;
+}
+
+a:hover {
+  color: #cc6a07;
+  text-decoration: underline overline #cc6a07;
+}
+
+button {
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 15px 35px;
+  background-color: white;
+  color: #ff6400;
+  border: 1px solid #ff6400;
+  box-shadow: 2px 2px #e65c03;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(255, 100, 0, 0.29);
+  color: white;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+header {
+  margin-top: 20px;
+  padding: 5px 15px;
+  background: #ff6400;
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 45px 25px;
+}
+
+
+
+p {
+  max-width: 230px;
+}
+
+.container {
+  width: 256px;
+  margin: 0 auto;  
+}
+
+.container img {
+  max-width: 205px;
+  outline: 3px solid rgba(255, 100, 0, 0.29);
+}
+
+@media (min-width: 425px) {
+    h1 {
+      font-style: 20px;
+    }
+  
+    p {
+      max-width: 300px;
+    }
+
+    .container {
+      width: 360px;
+      margin: 0 auto;  
+    }
+
+    .container img {
+      max-width: 310px;
+    }
+  
+}
+
+
+@media (min-width: 625px) {
+    h1 {
+      font-style: 24px;
+    }
+
+    p {
+      max-width: 600px;
+    }
+
+    .container {
+      width: 960px;
+      margin: 0 auto;  
+    }
+
+    .container img {
+      max-width: 920px;
+    }  
+}
